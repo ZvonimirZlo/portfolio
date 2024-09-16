@@ -23,7 +23,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 4px;
-    animation: fadeInAnimation ease 2s 4s;
+    animation: fadeInAnimation ease 1s 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     opacity: 0;
@@ -48,7 +48,7 @@ body {
 
 .button:hover {
     color: rgb(76, 76, 165);
-    background-color: #FD7014;
+    background-color: aliceblue;
     transition: ease-in-out .1s;
 }
 
@@ -66,7 +66,7 @@ body {
     font-weight: bold;
   }
 
-  .ml5 {
+  .front-end {
     position: relative;
     font-weight: 300;
     font-size: 4.5em;
@@ -77,7 +77,7 @@ body {
     flex-direction: column;
   }
   
-  .ml5 .text-wrapper {
+  .front-end .text-wrapper {
     position: relative;
     display: inline-block;
     padding-top: 0.1em;
@@ -86,7 +86,7 @@ body {
     line-height: 1em;
   }
   
-  .ml5 .line {
+  .front-end .line {
     position: absolute;
     left: 0;
     top: 0;
@@ -100,14 +100,14 @@ body {
     opacity: 0;
   }
   
-  .ml5 .letters {
+  .front-end .letters {
     display: inline-block;
     opacity: 1;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
-  .ml5 .letters-left, h1, .letters-center {
+  .front-end .letters-left, h1, .letters-center {
     color: aliceblue;
   }
 

@@ -23,14 +23,14 @@ button {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 4px;
-    animation: fadeInAnimation ease 2s 3s;
+    animation: fadeInAnimation ease 2s 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 .name {
-  animation: fadeInAnimation ease .9s .5s;
+  animation: fadeInAnimation ease 1s .5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -71,6 +71,7 @@ button:hover {
     font-weight: 300;
     font-size: 4.5em;
     color: #402d2d;
+    margin: 2em;
   }
   
   .ml5 .text-wrapper {

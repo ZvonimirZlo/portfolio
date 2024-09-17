@@ -2,6 +2,42 @@ body {
   margin: 0;
   padding: 0;
 }
+.nav ul li a, ul{
+  color: aliceblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.nav #logo {
+  color: aliceblue;
+
+}
+
+.nav ul {
+ display: flex;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 95%;
+  font-weight: bold;
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav ul li {
+  list-style-type: none;
+  margin-left: 30px;
+}
 
 .hero-bg {
   width: 100%;

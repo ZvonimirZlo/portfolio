@@ -1,32 +1,34 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.full-landing-image {
-    width: 100%;
-    height: 100vh;
-    background: url(hero.jpg) no-repeat center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.hero-bg {
+  width: 100%;
+  height: 100vh;
+  background: url(hero.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: fit-content;
 }
 
 .button {
-    width: 250px;
-    height: 50px;
-    border: 3px solid white;
-    background-color: transparent;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 4px;
-    animation: fadeInAnimation ease 1s 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    opacity: 0;
+  width: 250px;
+  height: 50px;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  animation: fadeInAnimation ease 3s 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .name {
@@ -37,81 +39,96 @@ body {
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .button:hover {
-    color: rgb(76, 76, 165);
-    background-color: aliceblue;
-    transition: ease-in-out .1s;
+  color: rgb(76, 76, 165);
+  background-color: aliceblue;
+  transition: ease-in-out .1s;
 }
 
-.ml12 {
-    font-weight: 200;
-    font-size: 1.8em;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-  }
-  
-  .ml12 .letter {
-    display: inline-block;
-    line-height: 1em;
-    color: white;
-    font-weight: bold;
-  }
+.letter {
+  display: inline-block;
+  line-height: 1em;
+  color: white;
+  font-weight: bold;
+}
 
-  .front-end {
-    position: relative;
-    font-weight: 300;
-    font-size: 4.5em;
-    color: #402d2d;
-    margin: 2em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .front-end .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: 0.1em;
-    padding-right: 0.05em;
-    padding-bottom: 0.15em;
-    line-height: 1em;
-  }
-  
-  .front-end .line {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    transform-origin: 0.5 0;
-    font-weight: bold;
-    opacity: 0;
-  }
-  
-  .front-end .letters {
-    display: inline-block;
-    opacity: 1;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+#dev {
+  font-size: 2.3rem;
+  letter-spacing: .6em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 100;
+}
 
-  .front-end .letters-left, h1, .letters-center {
-    color: aliceblue;
-  }
+.front-end {
+  position: relative;
+  font-size: 4.5em;
+  margin: 1.7em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
-  #dev {
-    font-size: 3rem;
-  }
+.front-end .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
 
+.front-end .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  transform-origin: 0.5 0;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.front-end .letters {
+  max-width: 60%;
+  max-height: fit-content;
+  display: inline-block;
+  opacity: 1;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.front-end .letters-left,
+h1,
+.letters-center {
+  color: aliceblue;
+}
+
+.i-m{
+  animation: fadeInAnimation ease 1s .8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.my-name {
+  letter-spacing: .4em;
+  max-width: 40vw;
+  font-size: 1.3em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  animation: fadeInAnimation ease 1s 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}

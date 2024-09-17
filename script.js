@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    $(".full-landing-image").ripples({
+    $(".hero-bg").ripples({
     resolution: 200,
     perturbance: .002,
 });
@@ -15,7 +15,7 @@ $(document).ready(() => {
     scaleX: [0,1],
     easing: "easeInOutExpo",
     duration: 900,
-    delay: 1000
+    delay: 1300
   }).add({
     targets: '.front-end .line',
     duration: 1200,

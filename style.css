@@ -24,7 +24,7 @@ video {
   left: 0;
   }
 
-.nav ul li a, ul{
+header .nav ul li a, ul{
   color: var(--text-color);
   background-color: transparent;
   text-decoration: none;
@@ -38,14 +38,14 @@ video {
  display: flex;
 }
 
-.nav ul li:hover{
+header .nav ul li:hover{
  text-decoration: underline;
  background-color: black;
  color: aqua;
  border-radius: 4px;
 }
 
-.nav {
+header .nav {
   overflow: hidden;
   position: fixed;
   top:0;
@@ -57,9 +57,10 @@ video {
   height: 3em;
   font-weight: bold;
   padding: 5px;
+  z-index: 100;
 }
 
-.nav ul li {
+header .nav ul li {
   padding-left: 15px;
   padding-right: 15px;
   list-style-type: none;
@@ -84,6 +85,9 @@ video {
   background-color: transparent;
   z-index: 100;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button {
